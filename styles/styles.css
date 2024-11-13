@@ -1,23 +1,118 @@
+/* # Global CSS variables are used by calling the variable name with the var() function.
+# Global CSS variables are declared within the :root selector.
+*/
+:root {
+    --padding: 10px;
+    --border: 1px solid rgba(0,0,0,.1);
+    --heading-font: 'Monserrat', Helvetica, sans-serif;
+}
+
+
+/*Create a CSS rule for the universal selector*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Setting the universal selector to have a margin and padding of zero (0) will ensure that 
+all elements on the page will have no margin or padding, regardless of the browser defaults. 
+This will make it easier for you to control the layout of the page */
+
+
+/*Class Selectors*/
+
+
+/* Set the value of the margin and padding to equal 1rem which means, match the root font size. */
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #eee;
+    background-color: #ddd;
+    color: #000;
+}
+
 nav {
     background-color: steelblue;
-    padding: 10px;
+    padding: var(--padding);
 }
 nav a{
     color: white;
     display: block;
     padding: 20px;
+    transition: 2s;
+    width: 100%;
+
 }
+
+/* Tutorials from sdpt */
+a:hover {
+    background-color: lightyellow;
+    width: 25%;
+    color: rgb(8, 5, 5);
+}
+a:active {
+    background-color: lightgreen;
+}
+
+/* Tutorials from sdpt */
+
 h1 {
     color: steelblue;
 }
 img {
-    width: 150px;
+    width: 100%;
     height: auto;
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
 p {
-    padding: 10px;
+    padding: var(--padding); /* # Applying the CSS Declaration Variable in the root using var () function. */
 }
 
+main {
+    width: 840px;
+    
+}
+
+li {
+    list-style-type: none;
+}
+
+aside {
+    width: 20em;
+    /* Need to comment out the ff. because this would be a duplicate property of the class box selector in
+    line 26. */
+    /* margin: 1em;
+    border: 1px dotted rgba(0, 0, 0, 0.2);
+    padding: 1em;
+    background-color: lightgray;
+    color: #333; */
+    text-align: center;
+    position: relative;
+}
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+aside h2 {
+    position: absolute;
+    top: 25px;
+    left: 60px;
+}
+main img {
+    float: right;
+    width: 150px;
+    height: auto;
+    border: 1px dotted rgba(0, 0, 0, 0.1);
+    padding: 1em;
+}
+p {
+    padding: 0;
+}
+footer {
+    text-align: center;
+    margin-top: 1em;
+    border-top: 1px solid black;
+}

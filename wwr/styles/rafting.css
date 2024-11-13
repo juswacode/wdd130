@@ -1,0 +1,43 @@
+:root {
+    --padding: 10px;
+    --border: 1px solid rgba(0,0,0,.1);
+    --heading-font: 'Roboto', 'Merriweather', sans-serif;
+    --font-size: 18px;
+
+}
+
+header {
+    padding: 1em;
+}
+body {
+    margin: 0;
+    font-size: var(--font-size);
+    padding: 1em;
+}
+
+h1 {
+    padding: var(--padding);
+    color: steelblue;
+}
+p {
+    padding: var(--padding);
+    color: green;
+}
+
+main {
+    max-width: 600px;
+}
+
+footer {
+    align-items: center;
+    margin-top: 100px;
+    background-color: rgb(49, 115, 174);
+    display: flex;
+    justify-content: space-around;
+}
+footer p {
+    color: pink;
+}
+footer img {
+    width: 100px;
+}

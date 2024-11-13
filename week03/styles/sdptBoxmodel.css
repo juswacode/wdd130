@@ -1,0 +1,79 @@
+* {
+    margin: 0 auto;
+}
+
+p {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+nav {
+    background-color: steelblue;
+    position: fixed;
+    width: 100%;
+}
+a {
+    margin: 0 10px;
+    font-size: 2rem;
+    padding: 5px;
+    transition: 1s;
+}
+
+a:hover {
+    color: gold;
+}
+
+#position-fixed {
+    background-color: powderblue;
+    padding: 10px 5px;
+    border: 10px lightgreen solid;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 1em;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+#position-sticky {
+    width: 100px;
+    background-color: lightgreen;
+    padding: 1em;
+    border: dotted lightyellow 5px;
+    position: sticky;
+    top: 10px;
+    margin: 0 auto;
+}
+
+#position-relative {
+    background-color: lightgray;
+    color: green;
+    position: relative;
+    padding: 5px;
+    border: dashed 10px pink;
+    margin: 0;
+    width: 200px;
+    height: 200px;
+    left: 150px;
+}
+
+#position-absolute {
+    background-color: azure;
+    color: darkgray;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    padding: 2px;
+    border: 2px solid tomato;
+}
+
+.container {
+    background-color: bisque;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+h6 {
+    position: absolute;
+    right: 0;
+}

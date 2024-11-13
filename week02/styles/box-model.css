@@ -1,8 +1,8 @@
 .callout {
 	max-width: 400px;
+	padding: 1rem;
+	border: solid rgba(0, 0, 0, 0.1) 10px;
     margin: 0 auto;
-    border: solid rgba(0, 0, 0, 0.1) 2px;
-    padding: 1rem;
     background-color: steelblue;
     color: white;
 
