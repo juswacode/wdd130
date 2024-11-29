@@ -46,12 +46,13 @@ nav a{
 
 /* Tutorials from sdpt */
 a:hover {
-    background-color: lightyellow;
-    width: 25%;
-    color: rgb(8, 5, 5);
+    background-color: white;
+    opacity: 0.8;
+    color: steelblue;
 }
 a:active {
     background-color: lightgreen;
+    opacity: 0.8;
 }
 
 /* Tutorials from sdpt */
@@ -64,7 +65,7 @@ img {
     height: auto;
     border: 1px solid steelblue;
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 30px black;
 }
 p {
     padding: var(--padding); /* # Applying the CSS Declaration Variable in the root using var () function. */
